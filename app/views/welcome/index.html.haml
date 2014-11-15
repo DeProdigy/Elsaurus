@@ -1,2 +1,7 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
+%h1 #justabrooklynkid
+
+= form_tag '#', method: :post, class: 'translate-box' do
+  = text_field_tag "userInput", ""
+  = submit_tag "Submit"
+
+.translated
