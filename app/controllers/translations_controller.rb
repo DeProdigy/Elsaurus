@@ -3,6 +3,6 @@ class TranslationsController < ApplicationController
 
   def create
     # make magic happen
-    render json: {translation: 'Yes, yes!'}
+    render json: {translation: 'Yes, yes!', response: 'Success'}
   end
 end
