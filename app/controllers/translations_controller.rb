@@ -3,6 +3,7 @@ class TranslationsController < ApplicationController
 
   def create
     # make magic happen
-    render json: {translation: 'Yes, yes!', response: 'Success'}
+    @translation = params[:random] ? RandomQuote.new : Translation.new(params[:text])
+    render json: {translation: @translation.render, response: 'Success'}
   end
 end
