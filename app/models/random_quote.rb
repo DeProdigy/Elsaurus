@@ -24,7 +24,7 @@ class RandomQuote
         "57 years later and I'll still be slapping Shaggy's It Wasn't Me. thuglife.",
         'All I want for christmas is a hebrew girl with a kwanzaa booty.',
         'This saving the world thing entails some real long nights.',
-        'A damn good day to be alive, happy monday fam.',
+        "A damn good day to be alive, happy #{Date.today.strftime('%A')} fam.",
         '"Painting is silent poetry, and poetry is painting that speaks.” And sex is all that combined, if you let it be.',
         "Cheesy as hell but I'm cheesin' as El.",
         "And if we can't run, we'll fly.",
