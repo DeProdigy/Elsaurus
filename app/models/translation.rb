@@ -15,7 +15,7 @@ class Translation
 
   def render
     # get rid off empty spaces and check if still empty
-    text.gsub(/\s+/, '').empty? ? RandomQuote.new.render : prepends + ' ' + text + '. ' + appends
+    text.gsub(/\s+/, '').empty? ? RandomQuote.new.render : prepends + ' ' + text.capitalize + '. ' + appends
   end
 
   private
