@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/json' }
 
   def track_request(text)
+    event = text == '' ? 'Random Quote' : text
     tracker = Mixpanel::Tracker.new(ENV['ELSAURUS_PROJECT_TOCKEN'])
-    tracker.track('Translation Request', text)
+    tracker.track('Translation Request', event)
   end
 end
